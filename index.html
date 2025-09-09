@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اور برنامج هكر بميزات خرافيه </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glow">نظام الاختراق المتقدم</h1>
+            <p>تحذير:استخدم التطبيق لما يرضي الله</p>
+        </header>
+        
+        <div class="warning">
+            الهڪر الخلاقي 🫡
+        </div>
+        
+        <!-- شاشة تسجيل الدخول -->
+        <div id="login-screen" class="screen">
+            <div class="input-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور" autocomplete="off">
+                <span id="password-status" style="color: red; font-size: 14px; display: block; margin-top: 5px;"></span>
+            </div>
+            <button class="btn" onclick="checkPassword()">دخول</button>
+        </div>
+        
+        <!-- شاشة التحميل -->
+        <div id="loading-screen" class="screen">
+            <div class="countdown" id="countdown">جاري التحضير... 0%</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="logs" id="loading-logs"></div>
+        </div>
+        
+        <!-- شاشة الاختراق الرئيسية -->
+        <div id="main-screen" class="screen">
+            <h2>أدوات الاختراق (للمزاح)</h2>
+            
+            <div class="hack-option">
+                <h3>اختراق واتساب</h3>
+                <p>أدخل رقم الهاتف مع رمز الدولة:</p>
+                <input type="text" id="whatsapp-number" placeholder="مثال: 966512345678">
+                <button class="btn" onclick="hackWhatsApp()">بدء اختراق واتساب</button>
+                <div class="result" id="whatsapp-result"></div>
+            </div>
+            
+            <div class="hack-option">
+                <h3>اختراق تلجرام</h3>
+                <p>أدخل اسم المستخدم:</p>
+                <input type="text" id="telegram-username" placeholder="مثال: username">
+                <button class="btn" onclick="hackTelegram()">بدء اختراق تلجرام</button>
+                <div class="result" id="telegram-result"></div>
+            </div>
+            
+            <div class="hack-option">
+                <h3>اختراق انستجرام</h3>
+                <p>أدخل اسم المستخدم:</p>
+                <input type="text" id="instagram-username" placeholder="مثال: username">
+                <button class="btn" onclick="hackInstagram()">بدء اختراق انستجرام</button>
+                <div class="result" id="instagram-result"></div>
+            </div>
+            
+            <div class="hack-option">
+                <h3>الإبلاغ عن مستخدم انستجرام</h3>
+                <p>أدخل اسم المستخدم للإبلاغ عنه:</p>
+                <input type="text" id="report-username" placeholder="مثال: username">
+                <button class="btn" onclick="reportInstagram()">بدء الإبلاغ</button>
+                <div class="result" id="report-result"></div>
+            </div>
+            
+            <div class="logs" id="main-logs"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

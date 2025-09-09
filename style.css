@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: radial-gradient(rgba(0, 30, 0, 0.3) 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+    background-color: rgba(10, 15, 10, 0.95);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #00ff00;
+}
+
+h1 {
+    font-size: 28px;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.warning {
+    background-color: #003300;
+    color: #00ff00;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #00ff00;
+}
+
+.screen {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#login-screen {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00ff00;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #001100;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+}
+
+.btn {
+    background-color: #003300;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #004d00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.progress-container {
+    margin: 30px 0;
+    background-color: #001100;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 30px;
+    width: 0%;
+    background-color: #00ff00;
+    text-align: center;
+    line-height: 30px;
+    color: #001100;
+    font-weight: bold;
+    transition: width 0.5s;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #001100;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hack-option {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #001a00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+}
+
+.countdown {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #00ff00;
+}
+
+.logs {
+    height: 200px;
+    overflow-y: auto;
+    background-color: #001100;
+    border: 1px solid #00ff00;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    color: #00ff00;
+}
+
+.success {
+    color: #00ff00;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.highlight {
+    color: #ffff00;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.flicker {
+    animation: flicker 0.5s infinite;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(0, 255, 0, 0.7); }
+    50% { text-shadow: 0 0 20px rgba(0, 255, 0, 0.9); }
+    100% { text-shadow: 0 0 5px rgba(0, 255, 0, 0.7); }
+}
+
+.glow {
+    animation: glow 2s infinite;
+}
